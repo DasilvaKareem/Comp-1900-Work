@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=hours\ payRate\ taxRate\ deductions
+comment0.target=void\ details(double,\ double,\ double,\ double)
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2
