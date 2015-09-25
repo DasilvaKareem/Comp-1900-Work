@@ -1,3 +1,24 @@
 #BlueJ package file
-#Mon Sep 21 00:17:22 EDT 2015
+objectbench.height=76
+objectbench.width=668
+package.editor.height=400
+package.editor.width=560
+package.editor.x=50
+package.editor.y=50
+package.numDependencies=0
+package.numTargets=1
+package.showExtends=true
+package.showUses=true
 project.charset=UTF-8
+target1.editor.height=700
+target1.editor.width=900
+target1.editor.x=674
+target1.editor.y=57
+target1.height=50
+target1.name=DiceRoller
+target1.showInterface=false
+target1.type=ClassTarget
+target1.typeParameters=
+target1.width=90
+target1.x=70
+target1.y=10
