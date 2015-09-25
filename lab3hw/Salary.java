@@ -2,8 +2,8 @@
 /**
  * Write a description of class Salary here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Kareem Dasilva 
+ * @version RASENSHIRUKEN
  */
 import java.util.*;
 public class Salary
