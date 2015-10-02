@@ -21,36 +21,77 @@ public class AlienCiv
            pinRows++;
            
         }
-        System.out.println(pinCurrent);
-        System.out.println(pinRows);
+        System.out.println("amount of pins: " + pinCurrent);
+        System.out.println("Amount of rows " + pinRows);
         
         double number1;
         double number2;
         Scanner scan = new Scanner(System.in);
-        final int Flag = -999;
+        final int Flag = 999;
         
         int count = 0;
         double sum = 0.0;
         double average;
         int finalNumber;
         System.out.println("Enter the numbers to be averaged");
-        do{
-            count++;
-            sum += number1;
-            number1 = scan.nextDouble();
-        }while(number1 != Flag)
         number1 = scan.nextDouble();
-        number2 = scan.nextDouble();
+        
+       
+           
+            
+        
+       
+        while(number1 != Flag){
+                double min = number1;
+              
+             count++;
+            
+           
+           number1 = scan.nextDouble();
+           if (number1 < min){
+               number1 = min;
+            } else {
+                 sum  += number1;
+            }
+            
+        }
+         if (count > 1){
+            sum -= 999;
+            average = sum/count;
+            System.out.println("average " + average);
+            System.out.println("play again enter 1");
+            number1 = scan.nextDouble();
+            if (number1 == 1){
+                 while(number1 != Flag){
+              double min = number1;
+              
+             count++;
+            
+           
+           number1 = scan.nextDouble();
+           if (number1 < min){
+               number1 = min;
+            } else {
+                 sum  += number1;
+            }
+            
+                 }
+                 if (count > 1 ){
+                       average = sum/count;
+            System.out.println("average " + average);
+                    } else {
+                         System.out.println("Nothing was entered or you entered only one number");
+                    }
+            }
+        } else {
+            System.out.println("Nothing was entered or you entered only one number");
+        }
+        
         
           
             
         
-        if (count > 0){
-            average = sum/count;
-            System.out.println("average");
-        } else {
-            
-        }
+        
         
       
     }
