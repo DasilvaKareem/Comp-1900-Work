@@ -1,0 +1,95 @@
+import java.math.*;
+
+public class GameBoard {
+
+	int rows;
+	int columns;
+	int amountOfMines;
+	Double maxBombCount;
+	int bombCount;
+	boolean gameOver;
+	Tile[][] board;
+
+	GameBoard() {
+	}
+
+	GameBoard(int inRow, int inColumn, int nBombs) {
+		gameOver = false;
+		this.rows = inRow;
+		this.amountOfMines = nBombs;
+		this.columns = inColumn;
+		System.out.println(this.rows);
+		System.out.println(this.columns);
+
+		 board = new Tile[inRow][inColumn];
+
+	
+
+		for (int x = 1; x < inRow; x++) {
+
+			for (int y = 1; y < inColumn; y++) {
+
+				Tile inTile = new Tile();
+				inTile.setCordX(x);
+				inTile.setCordY(y);
+				board[x][y] = inTile;
+
+				
+				System.out.println(inTile.toString());
+
+			}
+		}
+		createMines();
+
+	}
+	
+	public void checkTile(Tile outputTile){
+		if (outputTile.isHidden == true){
+			outputTile.setHidden(false);
+			lostGame(outputTile);  
+		} else {
+			System.out.println("You cannot picka  checked T fucker");
+		}
+		
+		
+	}
+	public boolean lostGame(Tile checkTile){
+		if (checkTile.isMined){
+			this.gameOver = true;
+		}
+		
+		return this.gameOver;
+	}
+	public void marked(Tile inputTile) {
+		if (inputTile.isMarked) {
+			inputTile.setMarked(false);
+		} else {
+			inputTile.setMarked(true);
+		}
+	}
+
+	public void createMines() {
+		this.maxBombCount = (this.rows * this.columns) * 0.25;
+		if (this.amountOfMines > this.maxBombCount.intValue()){
+			//picks a bigger amount of mines
+			System.out.println("you entered the maxium amount we defautled your bombs to 25% mines: " + this.maxBombCount.intValue());
+			this.amountOfMines = this.maxBombCount.intValue();
+			
+		}
+		while(bombCount != this.amountOfMines){
+			
+		
+			System.out.println(maxBombCount.intValue());
+			int randomBombRows = (int) Math.ceil(Math.random() * this.rows - 1);
+			int randomBombCols = (int) Math.ceil(Math.random() * this.columns - 1);
+			
+		
+				bombCount++;
+				board[randomBombRows][randomBombCols].setMined(true);
+				
+			
+		}
+	
+	}
+
+}

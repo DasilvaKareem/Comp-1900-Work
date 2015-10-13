@@ -7,7 +7,7 @@ public class GameClient {
 		// TODO Auto-generated method stub
 		
 		GameBoard test = new GameBoard(8,8,2);
-		
+	
 	}
 	
 

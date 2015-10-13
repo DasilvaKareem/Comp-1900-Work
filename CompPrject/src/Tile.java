@@ -65,9 +65,19 @@ public class Tile {
 	}
 
 	public String toString(){
-		String output =("X = " + this.cordX +
-						" Y = " + this.cordY +
-						" Is mine: " + this.isMined);
+		String output = "O";
+		
+		/*if(this.isMarked == true){
+			 // is marked is true
+			output = "f";
+		}*/
+		
+		
+			if (this.isMined){
+				output = "X";
+			}
+		
+		
 		return output;
 	}
 	
