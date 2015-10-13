@@ -1,0 +1,25 @@
+
+public class GameBoard {
+	
+	int rows;
+	int columns;
+	int amountOfMines;
+	
+	GameBoard(){
+	}
+	
+	GameBoard(int inRow, int inColumn){
+		this.rows = inRow;
+		this.columns = inColumn;
+		System.out.println(this.rows);
+		System.out.println(this.columns);
+	}
+	
+	
+	
+	public void createGame(){
+		
+	} 
+	
+
+}

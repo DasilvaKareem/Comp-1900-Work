@@ -1,0 +1,9 @@
+
+public class Tile {
+	//Element and attriubutes for a tile
+	boolean isMined;
+	boolean isMarked;
+	boolean isHidden;
+	int adjMines;
+	
+}

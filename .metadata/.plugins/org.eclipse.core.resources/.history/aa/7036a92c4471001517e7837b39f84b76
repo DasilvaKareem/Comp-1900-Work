@@ -1,0 +1,50 @@
+
+public class GameBoard {
+	
+	int rows;
+	int columns;
+	int amountOfMines;
+	
+	
+	
+	
+	GameBoard(){
+	}
+	
+	GameBoard(int inRow, int inColumn){
+		this.rows = inRow;
+		this.columns = inColumn;
+		System.out.println(this.rows);
+		System.out.println(this.columns);
+		
+		Tile [][] board = new Tile[inRow][inColumn];
+		
+		Double maxBombCount =  (inRow * inColumn) * 0.25;
+		
+		System.out.println(maxBombCount.intValue());
+		for(int x = 0;x < inRow ; x++){
+			
+			for (int y = 0; y< inColumn; y++){
+				
+				
+				Tile inTile = new Tile();
+				inTile.setCordX(x);
+				inTile.setCordY(y);
+				board[x][y] = inTile;
+				System.out.println(inTile.toString());
+				
+			}
+		}
+		
+		
+	}
+	
+	
+	
+	
+	public void createGame(){
+		
+	} 
+	
+
+}

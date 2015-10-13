@@ -1,0 +1,73 @@
+import java.math.*;
+
+public class GameBoard {
+
+	int rows;
+	int columns;
+	int amountOfMines;
+	Double maxBombCount;
+	int bombCount;
+	boolean gameOver;
+
+	GameBoard() {
+	}
+
+	GameBoard(int inRow, int inColumn) {
+		gameOver = false;
+		this.rows = inRow;
+		this.columns = inColumn;
+		System.out.println(this.rows);
+		System.out.println(this.columns);
+
+		Tile[][] board = new Tile[inRow][inColumn];
+
+		this.maxBombCount = (inRow * inColumn) * 0.25;
+
+		System.out.println(maxBombCount.intValue());
+
+		for (int x = 1; x < inRow; x++) {
+
+			for (int y = 1; y < inColumn; y++) {
+
+				Tile inTile = new Tile();
+				inTile.setCordX(x);
+				inTile.setCordY(y);
+				board[x][y] = inTile;
+
+				createMines(inTile);
+				System.out.println(inTile.toString());
+
+			}
+		}
+
+	}
+	
+	public void checkTile(Tile)
+	public boolean lostGame(Tile outputTile){
+		if (outputTile.isMined){
+			this.gameOver = true;
+		}
+		
+		return this.gameOver;
+	}
+	public void marked(Tile inputTile) {
+		if (inputTile.isMarked) {
+			inputTile.setMarked(false);
+		} else {
+			inputTile.setMarked(true);
+		}
+	}
+
+	public void createMines(Tile theTile) {
+		int randomBomb = (int) Math.ceil(Math.random() * 10);
+		if (bombCount == maxBombCount.intValue()) {
+			System.out.println("Maxium bomb count");
+		} else {
+			if (randomBomb <= 3) {
+				bombCount++;
+				theTile.setMined(true);
+			}
+		}
+	}
+
+}

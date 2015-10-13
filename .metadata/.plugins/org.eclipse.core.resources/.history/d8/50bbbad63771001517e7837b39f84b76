@@ -1,0 +1,24 @@
+
+
+public class GameClient {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	public class GameBoard {
+		//creates a gameboard to play on
+		boolean isMined;
+		boolean isMarked;
+		boolean isHidden;
+		int adjMines;
+		
+		
+	}
+	
+	public class Tile {
+		//Element and attriubutes for a tile
+		
+	}
+
+}

@@ -1,0 +1,42 @@
+
+public class GameBoard {
+	
+	int rows;
+	int columns;
+	int amountOfMines;
+	
+	
+	
+	
+	GameBoard(){
+	}
+	
+	GameBoard(int inRow, int inColumn){
+		this.rows = inRow;
+		this.columns = inColumn;
+		System.out.println(this.rows);
+		System.out.println(this.columns);
+		
+		Tile [][] board = new Tile[inRow][inColumn];
+		
+		for(int i = 0;i < inRow ; i++){
+			
+			for (int j = 0; j < inColumn; j++){
+				
+				Tile inTile = new Tile();
+				board[i][j] = inTile;
+				
+			}
+		}
+		
+	}
+	
+	
+	
+	
+	public void createGame(){
+		
+	} 
+	
+
+}
