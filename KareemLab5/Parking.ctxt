@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=arg
+comment0.target=void\ main(java.lang.String[])
+comment1.params=minutes
+comment1.target=int\ charge(int)
+numComments=2
