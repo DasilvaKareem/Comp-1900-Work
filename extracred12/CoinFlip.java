@@ -10,7 +10,7 @@ public class CoinFlip
     //coin flip method
     public static int flip(int amoutOfFlips, int heads){
        
-           //tried to use recursion and failed... it was really hard
+           //tried to use recursion and failed.
        
         
         while(amoutOfFlips != 100000){
@@ -27,7 +27,7 @@ public class CoinFlip
     public static void main(String[]args){
         int flipAmount = 0;
         int amtOfHeads = 0;
-        System.out.println("amount of heads " + flip(flipAmount, amtOfHeads));
+        System.out.println(flip(flipAmount, amtOfHeads));
         
         
     }

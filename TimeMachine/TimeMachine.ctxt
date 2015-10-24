@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment1.params=
+comment1.target=void\ enterDate()
+comment2.params=day\ month\ year\ minute\ hours\ seconds
+comment2.target=long\ convertToSeconds(int,\ int,\ int,\ int,\ int,\ int)
+comment3.params=location\ destination
+comment3.target=double\ costOfTrip(long,\ long)
+comment4.params=day\ month\ year
+comment4.target=boolean\ errorCheck(int,\ int,\ int)
+comment5.params=day\ month\ year
+comment5.target=boolean\ basicErrorCheck(int,\ int,\ int)
+comment6.params=koolaid
+comment6.target=java.lang.String\ getMonth(int)
+comment7.params=days
+comment7.target=java.lang.String\ getDay(int)
+comment8.params=day\ month\ year\ century
+comment8.target=int\ zellerFormula(int,\ int,\ int,\ int)
+numComments=9
