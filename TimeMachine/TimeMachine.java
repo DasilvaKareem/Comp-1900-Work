@@ -42,7 +42,7 @@ public class TimeMachine
         int seconds = input.nextInt();
         if(errorCheck(day,month,year) == false){
             //everything is good 
-            System.out.println("get a smoothie");
+            
             if(month == 1){
                 month = 13;
             }
