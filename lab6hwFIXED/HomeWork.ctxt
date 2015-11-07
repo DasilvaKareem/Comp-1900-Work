@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment1.params=inputDouble
+comment1.target=double[]\ partition(double[])
+comment2.params=a
+comment2.target=double[]\ timelasped(double[])
+numComments=3

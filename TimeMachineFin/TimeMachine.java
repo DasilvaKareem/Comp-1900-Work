@@ -19,6 +19,7 @@ public  class TimeMachine
         //main method
         int cont = 0;
         double plutLevels = 20000000;
+        System.out.println("Welcome to the ultimate time machine you only 20kg of plutionum to travel across time");
          Calendar c = new GregorianCalendar();
         System.out.println("The current time is: " + c.getTime() );
         locationSeconds = 0;
@@ -94,6 +95,7 @@ public  class TimeMachine
                 System.out.println(destDate );
                 System.out.println("Cost of Trip: " + (costOfTrip(locationSeconds, destinationSeconds)) + "mg of Plutonium");
                 System.out.println(((plutLevels - (costOfTrip(locationSeconds, destinationSeconds))) / 1000000) + "kg of Plutonium remaining");
+                System.out.println("Becareful on your trip");
                 locationDate = destDate;
                 locationSeconds = destinationSeconds;
                 System.out.println("The current time is: " + locationDate);
@@ -199,14 +201,14 @@ public  class TimeMachine
     public static boolean basicErrorCheck(int day, int month, int year ,int hour, int minute, int seconds){
         boolean isError = false;
         
-         if (hour < 1 || hour > 24){
+         if (hour < 0 || hour > 24){
                             isError = true;
                         
         }
-           if (minute < 1 || minute > 60){
+           if (minute < 0 || minute > 60){
                                 isError = true;
         }
-        if (seconds < 1 || seconds > 60){
+        if (seconds < 0 || seconds > 60){
             isError = true;
         }
         if (month < 1 || month > 12){

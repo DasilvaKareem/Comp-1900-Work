@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment1.params=betNumber\ amt
+comment1.target=int\ sim1(int,\ int)
+comment2.params=betNumber
+comment2.target=int\ sim2(int)
+comment3.params=betNumber
+comment3.target=int\ sim3(int)
+numComments=4
